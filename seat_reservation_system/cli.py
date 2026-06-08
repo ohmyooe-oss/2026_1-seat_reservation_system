@@ -55,6 +55,9 @@ def run_cli():
                         **stats
                     )
                 )
+            elif command == "available":
+                seats = store.available_seats()
+                print("Available seats:", seats)
             else:
                 print("Unknown command. Type 'help' for commands.")
         except ValueError as exc:
