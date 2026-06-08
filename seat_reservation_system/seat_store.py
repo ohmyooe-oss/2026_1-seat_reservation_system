@@ -35,8 +35,8 @@ class SeatStore:
         return self._seats[seat_id]
 
     def available_seats(self):
-    return [
-        seat_id
-        for seat_id, name in self._seats.items()
-        if name is None
-    ]
+        return [
+            seat_id
+            for seat_id, name in self._seats.items()
+            if name is None
+        ]
